@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eko hotel</title>
+  <link rel="stylesheet" href="output.css">
+  <script src="https://kit.fontawesome.com/041b0d0a58.js" crossorigin="anonymous"></script>
+  <style>
+    @keyframes dropdown {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-dropdown {
+      animation: dropdown 0.3s ease-out forwards;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="flex justify-between items-center p-5 lg:hidden ">
+      <span class="text-text">OUR HOTELS<i class="fa-solid fa-chevron-down"></i></span>
+      <div class="bg-banner1 w-[130px] px-1 font-semibold text-[16px]
+          text-white">
+        <p>SPECIAL OFFERS</p>
+      </div>
+    </div>
+  </header>
+  <header class="  sticky top-0 bg-white">
+    <div class=" flex  items-center justify-between  p-2 border-t-[1px] border-gray-400 lg:hidden ">
+      <div class="bg-[url('/public/image/logo.jpg')] bg-center bg-cover w-[240px] md:block 
+         h-[80px]"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-8 relative lg:hidden ">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </div>
+  </header>
+  <header class="hidden  lg:flex  md:flex-col">
+
+    <div class="px-20 py-2 items-center gap-14 flex justify-between border-b-[1px] border-gray-400  ">
+      <ul class="flex gap-10 text-text">
+        <li class=" hover:text-banner1">EKO GARDENS<i class="fa-solid fa-chevron-down"></i>
+        <li>
+        <li class=" hover:text-banner1">EKO HOTEL<i class="fa-solid fa-chevron-down"></i></li>
+        <li class=" hover:text-banner1">EKO SUITES <i class="fa-solid fa-chevron-down"></i></li>
+        <li class=" hover:text-banner1">EKO SIGNATURE <i class="fa-solid fa-chevron-down"></i></li>
+        <li class=" hover:text-banner1">SPECIAL OFFER <i class="fa-solid fa-chevron-down"></i></li>
+      </ul>
+      <div class="flex gap-5">
+        <div class="bg-banner1 w-[130px] px-2 font-semibold text-[16px]
+          text-white">
+          <p>THE COMPANY</p>
+        </div>
+        <span><i class="fa-brands fa-twitter"></i></span>
+        <span><i class="fa-brands fa-facebook-f"></i></span>
+        <span><i class="fa-solid fa-camera-retro"></i></span>
+        <span><i class="fa-brands fa-pinterest"></i></span>
+      </div>
+    </div>
+  </header>
+
+  <header class="sticky top-0 bg-white hidden z-30 lg:block  ">
+    <div class="flex items-center gap-8 ">
+      <ul class="flex gap-14 px-14 text-text">
+        <div class="relative group ">
+          <li class=" hover:text-banner1  text-[14px]"> HOME<i class="fa-solid fa-chevron-down"></i></li>
+          <div
+            class="absolute left-0 mt-2 w-40 bg-white rounded shadow-lg opacity-0  invisible  group-hover:visible group-hover:opacity-100 animate-dropdown transition-all z-10 flex flex-col border-[1px] border-t-gray-400">
+            <a href="" class="px-5 mt-4  hover:text-banner1">ABOUT US</a>
+            <a href="" class="p-5  hover:text-banner1"> CONTACT US</a>
+          </div>
+        </div>
+        <li class=" hover:text-banner1 text-[14px]"> DINING</li>
+        <div class="relative group">
+          <li class=" hover:text-banner1 text-[14px]"> MEETING & BANQUETING<i class="fa-solid fa-chevron-down"></i></li>
+          <div
+            class="absolute left-0 mt-2  bg-white rounded shadow-lg opacity-0  invisible  group-hover:visible group-hover:opacity-100 animate-dropdown transition-all z-10 flex flex-col border-[1px] border-t-gray-400 w-64 ">
+            <a href="" class="  mt-4 p-2   hover:text-banner1"> GRAND BALL ROOM</a>
+            <a href="" class="  hover:text-banner1 p-2 "> EKO CONVENTION CENTRE</a>
+            <a href="" class="p-2   hover:text-banner1">FANTASIA</a>
+            <a href="" class=" hover:text-banner1 p-2   "> MEETING ROOMS</a>
+          </div>
+
+        </div>
+      </ul>
+
+      <div class="bg-[url('/public/image/logo.jpg')] bg-center bg-cover w-[287px] md:block
+         h-[100px] z-10"></div>
+      <div>
+        <ul class="flex gap-20 text-text">
+          <li class="hover:text-banner1"> RECREATIONAL SERVICES<i class="fa-solid fa-chevron-down"></i></li>
+          <li class="hover:text-banner1"> EVENTS<i class="fa-solid fa-chevron-down"></i></li>
+          <li class="hover:text-banner1"> GALLERY</li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+  <div class="banner1">
+    <div class="bg-[url('/public/image/pool1.jpg')] bg-cover bg-center w-full md:h-[85vh]  h-[40vh] ">
+    </div>
+  </div>
+  <div class="banner2 bg-banner3 p-6 lg:flex lg:flex-col">
+    <div class=" p-20  gap-16 hidden lg:flex">
+      <div class="w-[20%]">
+        <p class="text-banner1 text-[12px] text-center">ARRIVAL DATE</p>
+        <p class="text-banner2 text-[26px] text-center">ARRIVAL DATE</p>
+      </div>
+      <div class="w-[20%]">
+        <p class="text-banner1 text-[12px] text-center">DEPATURE DATE</p>
+        <p class="text-banner2 text-[26px] text-center">Dept Date</p>
+      </div>
+      <div class="w-[20%]">
+        <p class="text-banner1 text-[12px] text-center">ADULTS</p>
+        <p class="text-banner2 text-[26px] text-center">Choose Adult</p>
+      </div>
+      <div class="w-[20%]">
+        <p class="text-banner1 text-[12px] text-center"> CHILDREN</p>
+        <p class="text-banner2 text-[26px] text-center">0 Child</p>
+      </div>
+
+    </div>
+    <div class="flex justify-center">
+      <div
+        class="bg-banner1 w-[180px]  h-[25px]  font-bold text-white flex justify-center items-center py-7 text-[14px]">
+        <p class="hover:text-black transition ease-in-out duration-500">CHECK AVAILABILITY</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner3 bg-banner1 p-5">
+    <div class="flex justify-center">
+      <span class="text-[42px] font-bold text-center text-banner3"> OUR<span>
+          <span class=" text-white text-[42px] font-bold text-center">PACKAGES</span>
+    </div>
+    <div class="flex flex-col justify-center  items-center gap-1 pb-6">
+      <hr class="w-[50px]">
+      <hr class="w-[200px]">
+      <hr class="w-[50px]">
+    </div>
+
+    
+      <div  class="w-[100%] bg-banner4 lg:hidden p-5">
+        <div class="bg-[url('/public/image/play.jpg')] bg-cover bg-center w-[99%] h-[276px]"></div>
+        <div>
+          <p class="text-[24px] text-start font-bold font-sans text-banner3 pt-6 pb-3">Hakuna Matata Theme Park Pass</p>
+          <p class="text-[16px] font-sans-serif">Hakuna Matata Theme Park, located in Eko Atlantic City, Lagos, is West Africa's largest inflatable theme park, offering a diverse range of attractions suitable for all ages. Note that the theme park is closed on Mondays and Tuesdays.</p>
+        </div>
+      
+          <div class="flex justify-between pt-6 pb-10">
+            <div class="text-[16px] text-banner1 font-bold w-[38%] text-center bg-banner3 p-2   rounded-md">
+            <p>Book Weekday</p>
+          </div>
+          <div class="text-[16px] text-banner1 font-bold w-[38%] text-center bg-banner3  p-2 rounded-md">
+            <p>Book Weekend</p>
+          </div>
+          </div>
+
+           <div class="bg-[url('/public/image/pool2.jpg')] bg-cover bg-center w-[99%] h-[276px] "></div>
+        <div>
+          <p class="text-[24px] text-start font-bold font-sans text-banner3 pt-6 pb-3">Hakuna Matata Theme Park Pass</p>
+          <p class="text-[16px] font-sans-serif">Hakuna Matata Theme Park, located in Eko Atlantic City, Lagos, is West Africa's largest inflatable theme park, offering a diverse range of attractions suitable for all ages. Note that the theme park is closed on Mondays and Tuesdays.</p>
+        </div>
+      
+          <div class="flex justify-between pt-6">
+            <div class="text-[16px] text-banner1 font-bold w-[38%] text-center bg-banner3 p-2  rounded-md">
+            <p>Book Weekday</p>
+          </div>
+          <div class="text-[16px] text-banner1 font-bold w-[38%] text-center bg-banner3  p-2 rounded-md">
+            <p>Book Weekend</p>
+          </div>
+          </div>
+      </div>
+
+      <div class="lg:flex justify-between pt-10 px-14 hidden">
+        <div class="w-[45%]  bg-banner4 p-6">
+          <div class="bg-[url('/public/image/play.jpg')] bg-cover bg-center w-[99%] h-[276px]"></div>
+        <div>
+          <p class="text-[24px] text-start font-bold font-sans text-banner3 pt-6 pb-3">Hakuna Matata Theme Park Pass</p>
+          <p class="text-[16px] font-sans-serif ">Hakuna Matata Theme Park, located in Eko Atlantic City, Lagos, is West Africa's largest inflatable theme park, offering a diverse range of attractions suitable for all ages. Note that the theme park is closed on Mondays and Tuesdays.</p>
+        </div>
+      
+          <div class="flex justify-between pt-6 ">
+            <div class="text-[16px] text-banner1 font-bold w-[38%] text-center bg-banner3 p-2   rounded-md">
+            <p>Book Weekday</p>
+          </div>
+          <div class="text-[16px] text-banner1 font-bold w-[38%] text-center bg-banner3  p-2 rounded-md">
+            <p>Book Weekend</p>
+          </div>
+          </div>
+        </div>
+        <div class="w-[45%]  bg-banner4 p-6">
+          <div class="bg-[url('/public/image/pool2.jpg')] bg-cover bg-center w-[99%] h-[276px] "></div>
+        <div >
+          <p class="text-[24px] text-start font-bold font-sans text-banner3 pt-6 pb-3">Pool Pass</p>
+          <p class="text-[16px] font-sans-serif">Escape the heat and unwind in our stunning swimming pool, a perfect retreat for both relaxation and fun. Whether you're looking for a refreshing dip, a leisurely lounge by the water, or a family-friendly day out, our Pool Pass offers the ultimate experience. Package is inclusive of Lunch or Dinner Buffet at Kuramo BLD and 1 soft drink.</p>
+        </div>
+      
+          <div class="flex justify-between pt-6 ">
+            <div class="text-[16px] text-banner1 font-bold w-[38%] text-center bg-banner3 p-2  rounded-md">
+            <p>Book Weekday</p>
+          </div>
+          <div class="text-[16px] text-banner1 font-bold w-[38%] text-center bg-banner3  p-2 rounded-md">
+            <p>Book Weekend</p>
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+      <div class="banner4">
+         <div class="flex justify-center pt-14">
+      <span class="text-[42px] font-bold text-center text-banner3"> WELCOME TO <span>
+          <span class=" text-banner1 text-[42px] font-bold text-center">EKO HOTEL & SUITES</span>
+    </div>
+    <div class="flex flex-col justify-center  items-center  gap-1 pb-14 pt-5">
+      <hr class="w-[50px] border-banner1">
+      <hr class="w-[200px] border-banner1">
+      <hr class="w-[50px] border-banner1">
+    </div>
+        <div class="flex z-20">
+          <div class="bg-[url('/public/image/pool4.jpg')] bg-center bg-cover lg:w-[50%] h-[430px] z-10 ml-8 mt-16"></div>
+        <div class="w-[65%] pr-6 shadow-xl mr-8 pl-7 pb-16 ">
+          <p class="text=[16px] font-semibold text-banner1 py-5">ABOUT US</p>
+          <p class="text-[32px] text-banner2 font-bold pb-5">The Most Preferred Hotel in West Africa</p>
+          <p class="py-5">Eko Hotels & Suites is the most preferred hotel in West Africa, and it is all about the right mix! Located in the heart of Victoria Island, we offer our clients a perfect blend of business & leisure amenities with dining and recreational options delicately infused in one amazing space. We crown all these with services that meet the highest international standards.</p>
+          <p class="py-5">Overlooking the new Eko Atlantic City and Atlantic Ocean, it is just a 10-minute drive to the City Centre and only 45minutes away from the Airport.</p>
+          <p class="py-5">Our hotels are designed for your comfort and convenience. Your security is our primary concern and you will find our customer care second to none.</p>
+          <div class="w-[150px] text-[16px] text-center
+        font-bold text-white bg-banner1 p-3  hover:bg-white hover:text-black hover:border-black border-[1px] transition ease-in-out duration-500500">
+          <p>LEARN MORE</p>
+        </div>
+       
+        </div>
+        </div>
+        
+        <br> 
+        <br> 
+        <br>
+        <br>
+        <br>
+      </div>
+
+
+
+
+
+</body>
+
+</html>
